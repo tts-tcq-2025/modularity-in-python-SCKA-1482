@@ -1,5 +1,5 @@
 
-# color_mapping.py
+
 MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
 MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
 
@@ -20,13 +20,13 @@ def print_manual():
         major, minor = get_color_from_pair_number(pair_number)
         print(f"Pair {pair_number:2d}: {color_pair_to_string(major, minor)}")
 
-# Test Functions
+
 def test():
     assert get_color_from_pair_number(4) == ('White', 'Brown')
     assert get_pair_number_from_color('Black', 'Orange') == 12
     print("Tests passed!")
 
-# Entry point
+
 if __name__ == "__main__":
     test()
     print_manual()
